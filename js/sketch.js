@@ -8,11 +8,10 @@ function setup() {
 
 function draw() {
     if (mouseIsPressed) {
-        tone = random(0, 255);
-        stroke(tone, 255, 255);
+        stroke(tone / 2, 255, 255);
         strokeWeight(10)
         line(mouseX, mouseY, pmouseX, pmouseY);
-        print(pmouseX + ' -> ' + mouseX);
+
     }
 }
 
