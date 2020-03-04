@@ -1,6 +1,6 @@
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    background(0);
+    background(255);
 }
 
 function draw() {
@@ -9,6 +9,10 @@ function draw() {
         line(mouseX, mouseY, pmouseX, pmouseY);
         print(pmouseX + ' -> ' + mouseX);
     }
+}
+
+function mousePressed() {
+    background(random(0, 255));
 }
 
 function windowResized() {
