@@ -5,8 +5,11 @@ function setup() {
 }
 
 function draw() {
-    fill(255);
-    rect(mouseX, mouseY, 10, 10);
+    if (mouseIsPressed) {
+        fill(255);
+        rect(mouseX, mouseY, 10, 10);
+    }
+
 }
 
 function windowResized() {
