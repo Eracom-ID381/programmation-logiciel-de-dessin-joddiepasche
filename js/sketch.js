@@ -15,7 +15,8 @@ function draw() {
 }
 
 function mousePressed() {
-    background(random(0, 250), 255, 255);
+    tone = random(0, 255);
+    background(tone, 255, 255);
 }
 
 function windowResized() {
