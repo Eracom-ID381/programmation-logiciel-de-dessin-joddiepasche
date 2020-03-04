@@ -1,15 +1,15 @@
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  background(0);
-  noStroke();
+    createCanvas(windowWidth, windowHeight);
+    background(0);
+    noStroke();
 }
 
 function draw() {
-  fill(255);
-  rect(mouseX, mouseY, 50, 50);
+    fill(255);
+    rect(mouseX, mouseY, 10, 10);
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-  background(0);
+    resizeCanvas(windowWidth, windowHeight);
+    background(0);
 }
