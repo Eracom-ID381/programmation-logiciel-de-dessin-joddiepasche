@@ -1,6 +1,9 @@
+let tone = 0;
+
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    background(255);
+    background(0);
+    colorMode(HSB, 255);
 }
 
 function draw() {
@@ -12,7 +15,7 @@ function draw() {
 }
 
 function mousePressed() {
-    background(random(0, 255));
+    background(random(0, 250), 255, 255);
 }
 
 function windowResized() {
