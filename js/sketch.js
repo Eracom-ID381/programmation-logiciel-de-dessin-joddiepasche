@@ -9,6 +9,7 @@ function setup() {
 function draw() {
     if (mouseIsPressed) {
         stroke(255);
+        strokeWeight(10)
         line(mouseX, mouseY, pmouseX, pmouseY);
         print(pmouseX + ' -> ' + mouseX);
     }
