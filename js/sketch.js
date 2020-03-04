@@ -10,7 +10,7 @@ function draw() {
     if (mouseIsPressed) {
         stroke(tone / 2, 255, 255);
         strokeWeight(10)
-        line(mouseX, mouseY, pmouseX, pmouseY);
+        line(800, mouseY, mouseX, mouseY);
 
     }
 }
