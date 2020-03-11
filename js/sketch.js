@@ -8,8 +8,8 @@ function setup() {
 
 function draw() {
     if (mouseIsPressed) {
-        stroke(tone / 2, 255, 255);
-        strokeWeight(10)
+        stroke(tone, 255, 255);
+        strokeWeight(1)
         line(width / 2, mouseY, mouseX, mouseY);
     }
 
@@ -17,7 +17,7 @@ function draw() {
 
 function mousePressed() {
     tone = random(0, 255);
-    background(tone, 255, 255);
+    background(0, 0, 0);
 }
 
 function windowResized() {
