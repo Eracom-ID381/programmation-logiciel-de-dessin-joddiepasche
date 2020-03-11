@@ -8,6 +8,9 @@ function setup() {
 }
 
 function draw() {
+    fill(255);
+    textSize(18);
+    text(mode, 20, 20);
     if (mode === 0) {
         if (mouseIsPressed) {
             stroke(tone, 255, 255);
@@ -30,16 +33,13 @@ function draw() {
         if (mouseIsPressed) {
             stroke(tone, 255, 255);
             strokeWeight(1)
-            line(mouseX, mouseY, mouseX, width / 2);
+            line(mouseX, mouseY, mouseX, height / 2);
         }
     }
-
-
 }
 
 function mousePressed() {
     tone = random(0, 255);
-    background(0, 0, 0);
 }
 
 function windowResized() {
@@ -48,6 +48,8 @@ function windowResized() {
 }
 
 function keyPressed() {
+    background(0, 0, 0);
+
     if (keyCode === LEFT_ARROW) {
         mode = 0;
     }
