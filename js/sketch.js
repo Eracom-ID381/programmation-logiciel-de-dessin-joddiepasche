@@ -33,7 +33,7 @@ function draw() {
         if (mouseIsPressed) {
             stroke(tone, 255, 255);
             strokeWeight(1)
-            line(mouseX, height / 2, mouseX, height);
+            line(mouseX, mouseY, mouseX, height);
         }
     }
 }
