@@ -18,7 +18,19 @@ function draw() {
         if (mouseIsPressed) {
             stroke(tone, 255, 255);
             strokeWeight(1)
+            line(mouseX, mouseY, width / 2, width / 2);
+        }
+    } else if (mode === 2) {
+        if (mouseIsPressed) {
+            stroke(tone, 255, 255);
+            strokeWeight(1)
             line(mouseX, width / 2, width / 2, mouseY);
+        }
+    } else if (mode === 3) {
+        if (mouseIsPressed) {
+            stroke(tone, 255, 255);
+            strokeWeight(1)
+            line(mouseX, mouseY, mouseX, width / 2);
         }
     }
 
