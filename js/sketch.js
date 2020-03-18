@@ -1,18 +1,24 @@
 let tone = 0;
 let mode = 0;
+let osc, freq, amp;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
     background(0);
     colorMode(HSB, 255);
+    osc = new p5.Oscillator('triangle');
 }
 
 function draw() {
     fill(255);
     textSize(18);
     text(mode, 20, 20);
+    freq = map(mouseX, 0, width, 100, 1000);
+    amp = map(mouseY, 0, height, 0, 1);
     if (mode === 0) {
         if (mouseIsPressed) {
+            osc.freq(freq, 0.1);
+            osc.amp(amp, 0.1);
             stroke(tone, 255, 255);
             strokeWeight(1)
             line(width / 2, mouseY, mouseX, mouseY);
@@ -62,4 +68,8 @@ function keyPressed() {
     if (keyCode === UP_ARROW) {
         mode = 3;
     }
+}
+
+function mouseReleased() {
+    osc.stop();
 }
