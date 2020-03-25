@@ -53,10 +53,6 @@ function draw() {
     }
 }
 
-function mousePressed() {
-    tone = random(0, 255);
-}
-
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
     background(0);
@@ -80,6 +76,8 @@ function keyPressed() {
 }
 
 function mousePressed() { 
+    tone = random(0, 255);
+
     if (mode === 0) {
         osc0.start();
     } else if (mode === 1) {
