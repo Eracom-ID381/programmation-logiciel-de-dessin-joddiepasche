@@ -20,7 +20,7 @@ function draw() {
     amp = map(mouseY, 0, height, 0, 1);
     if (mode === 0) {
         if (mouseIsPressed) {
-            osc0.freq(freq, 0.1);
+            osc0.freq(100, 0.1);
             osc0.amp(amp, 0.1);
             stroke(tone, 255, 255);
             strokeWeight(1)
@@ -28,7 +28,7 @@ function draw() {
         }
     } else if (mode === 1) {
         if (mouseIsPressed) {
-            osc1.freq(freq, 0.1);
+            osc1.freq(150, 0.1);
             osc1.amp(amp, 0.1);
             stroke(tone, 255, 255);
             strokeWeight(1)
@@ -36,7 +36,7 @@ function draw() {
         }
     } else if (mode === 2) {
         if (mouseIsPressed) {
-            osc2.freq(freq, 0.1);
+            osc2.freq(50, 0.1);
             osc2.amp(amp, 0.1);
             stroke(tone, 255, 255);
             strokeWeight(1)
