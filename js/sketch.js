@@ -79,14 +79,14 @@ function keyPressed() {
     }
 }
 
-function mousePressed() { 
+function mousePressed() {
     if (mode === 0) {
         osc0.start();
     } else if (mode === 1) {
         osc1.start();
     } else if (mode === 2) {
         osc2.start();
-    } else if (mode === 3) { 
+    } else if (mode === 3) {
         osc3.start();
     }
 }
@@ -95,5 +95,5 @@ function mouseReleased() {
     osc0.stop();
     osc1.stop();
     osc2.stop();
-    osc3.stop();    
+    osc3.stop();
 }
